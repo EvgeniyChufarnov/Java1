@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         String[] filesToMerge = {"aboutGIT1.txt", "aboutGIT2.txt"};
 
-        //пишем в разных блоках try, чтобы ошибка в 1 методе не прекращала выполнение других
+        //пишем в разных блоках try, чтобы исключение в 1 методе не прекращала выполнение других
 
         try {
             FilesManipulator.MergeTxtFiles(filesToMerge, "aboutGIT3.txt", true);
@@ -31,7 +31,5 @@ public class Main {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
-
     }
 }
